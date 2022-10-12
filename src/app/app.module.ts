@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import {MatButtonModule} from '@angular/material/button';
+import { AllMatchesComponent } from './all-matches/all-matches.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AllSeriesComponent } from './all-series/all-series.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllMatchesComponent,
+    AllSeriesComponent
   ],
   imports: [
     BrowserModule,
@@ -18,10 +24,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatToolbarModule,
     MatCardModule,
     MatIconModule,
-    CarouselModule
-    
-
-
+    MatButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
